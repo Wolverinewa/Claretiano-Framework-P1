@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>CLARETIANO - Atividade Ciclo 2</title>
+
+	<link rel="stylesheet" href="resources/css/bootstrap.min.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+					aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">Claretiano</a>
+			</div>
+
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+							Listagens <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu" role="menu">
+							<li>
+								<a href="municipios.html">Municípios</a>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a href="uf.html">Unidades Federativas</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="#">Usuário: Willian</a>
+					</li>
+					<li>
+						<a href="#">Sair</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title text-center">UNIDADES FEDERATIVAS CADASTRADOS</h3>
+			</div>
+
+			<div class="panel-body">
+				<a href="uf_edit.html" class="btn btn-primary">
+					<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Novo
+				</a>
+
+				<div class="table-responsive">
+					<table class="table table-striped table-hover">
+						<thead>
+							<tr>
+								<th>SIGLA</th>
+								<th>NOME</th>
+								<th>AÇÕES</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td>AC</td>
+								<td>ACRE</td>
+								<td>
+									<a href="uf_edit.html" class="btn btn-info">
+										<span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editar
+									</a>
+									<a href="uf_delete.html" class="btn btn-danger">
+										<span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Excluir
+									</a>
+								</td>
+							</tr>
+
+							<tr>
+								<td>AL</td>
+								<td>ALAGOAS</td>
+								<td>
+									<a href="uf_edit.html" class="btn btn-info">
+										<span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editar
+									</a>
+									<a href="uf_delete.html" class="btn btn-danger">
+										<span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Excluir
+									</a>
+								</td>
+							</tr>
+
+							<tr>
+								<td>AM</td>
+								<td>AMAZONAS</td>
+								<td>
+									<a href="uf_edit.html" class="btn btn-info">
+										<span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editar
+									</a>
+									<a href="uf_delete.html" class="btn btn-danger">
+										<span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Excluir
+									</a>
+								</td>
+							</tr>
+
+							<tr>
+								<td>AP</td>
+								<td>AMAPÁ</td>
+								<td>
+									<a href="uf_edit.html" class="btn btn-info">
+										<span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editar
+									</a>
+									<a href="uf_delete.html" class="btn btn-danger">
+										<span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Excluir
+									</a>
+								</td>
+							</tr>
+
+							<tr>
+								<td>BA</td>
+								<td>BAHIA</td>
+								<td>
+									<a href="uf_edit.html" class="btn btn-info">
+										<span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editar
+									</a>
+									<a href="uf_delete.html" class="btn btn-danger">
+										<span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Excluir
+									</a>
+								</td>
+							</tr>
+
+							<tr>
+								<td>CE</td>
+								<td>CEARÁ</td>
+								<td>
+									<a href="uf_edit.html" class="btn btn-info">
+										<span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editar
+									</a>
+									<a href="uf_delete.html" class="btn btn-danger">
+										<span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Excluir
+									</a>
+								</td>
+							</tr>
+
+							<tr>
+								<td>DF</td>
+								<td>DISTRITO FEDERAL</td>
+								<td>
+									<a href="uf_edit.html" class="btn btn-info">
+										<span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editar
+									</a>
+									<a href="uf_delete.html" class="btn btn-danger">
+										<span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Excluir
+									</a>
+								</td>
+							</tr>
+
+							<tr>
+								<td>ES</td>
+								<td>ESPIRITO SANTO</td>
+								<td>
+									<a href="uf_edit.html" class="btn btn-info">
+										<span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editar
+									</a>
+									<a href="uf_delete.html" class="btn btn-danger">
+										<span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Excluir
+									</a>
+								</td>
+							</tr>
+
+							<tr>
+								<td>GO</td>
+								<td>GOIAIS</td>
+								<td>
+									<a href="uf_edit.html" class="btn btn-info">
+										<span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editar
+									</a>
+									<a href="uf_delete.html" class="btn btn-danger">
+										<span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Excluir
+									</a>
+								</td>
+							</tr>
+
+							<tr>
+								<td>MA</td>
+								<td>MARANHÃO</td>
+								<td>
+									<a href="uf_edit.html" class="btn btn-info">
+										<span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editar
+									</a>
+									<a href="uf_delete.html" class="btn btn-danger">
+										<span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Excluir
+									</a>
+								</td>
+							</tr>
+
+							<tr>
+								<td>MG</td>
+								<td>MINAS GERAIS</td>
+								<td>
+									<a href="uf_edit.html" class="btn btn-info">
+										<span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editar
+									</a>
+									<a href="uf_delete.html" class="btn btn-danger">
+										<span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Excluir
+									</a>
+								</td>
+							</tr>
+
+							<tr>
+								<td>MS</td>
+								<td>MATO GROSSO DO SUL</td>
+								<td>
+									<a href="uf_edit.html" class="btn btn-info">
+										<span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editar
+									</a>
+									<a href="uf_delete.html" class="btn btn-danger">
+										<span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Excluir
+									</a>
+								</td>
+							</tr>
+
+							<tr>
+								<td>MT</td>
+								<td>MATO GROSSO</td>
+								<td>
+									<a href="uf_edit.html" class="btn btn-info">
+										<span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editar
+									</a>
+									<a href="uf_delete.html" class="btn btn-danger">
+										<span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Excluir
+									</a>
+								</td>
+							</tr>
+
+							<tr>
+								<td>PA</td>
+								<td>PARÁ</td>
+								<td>
+									<a href="uf_edit.html" class="btn btn-info">
+										<span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editar
+									</a>
+									<a href="uf_delete.html" class="btn btn-danger">
+										<span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Excluir
+									</a>
+								</td>
+							</tr>
+
+							<tr>
+								<td>PE</td>
+								<td>PERNAMBUCO</td>
+								<td>
+									<a href="uf_edit.html" class="btn btn-info">
+										<span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editar
+									</a>
+									<a href="uf_delete.html" class="btn btn-danger">
+										<span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Excluir
+									</a>
+								</td>
+							</tr>
+
+							<tr>
+								<td>PI</td>
+								<td>PIAUÍ</td>
+								<td>
+									<a href="uf_edit.html" class="btn btn-info">
+										<span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editar
+									</a>
+									<a href="uf_delete.html" class="btn btn-danger">
+										<span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Excluir
+									</a>
+								</td>
+							</tr>
+
+							<tr>
+								<td>PR</td>
+								<td>PARANÁ</td>
+								<td>
+									<a href="uf_edit.html" class="btn btn-info">
+										<span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editar
+									</a>
+									<a href="uf_delete.html" class="btn btn-danger">
+										<span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Excluir
+									</a>
+								</td>
+							</tr>
+
+							<tr>
+								<td>RJ</td>
+								<td>RIO DE JANEIRO</td>
+								<td>
+									<a href="uf_edit.html" class="btn btn-info">
+										<span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editar
+									</a>
+									<a href="uf_delete.html" class="btn btn-danger">
+										<span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Excluir
+									</a>
+								</td>
+							</tr>
+
+							<tr>
+								<td>RN</td>
+								<td>RIO GRANDE DO NORTE</td>
+								<td>
+									<a href="uf_edit.html" class="btn btn-info">
+										<span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editar
+									</a>
+									<a href="uf_delete.html" class="btn btn-danger">
+										<span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Excluir
+									</a>
+								</td>
+							</tr>
+
+							<tr>
+								<td>RO</td>
+								<td>RONDONIA</td>
+								<td>
+									<a href="uf_edit.html" class="btn btn-info">
+										<span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editar
+									</a>
+									<a href="uf_delete.html" class="btn btn-danger">
+										<span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Excluir
+									</a>
+								</td>
+							</tr>
+
+							<tr>
+								<td>RR</td>
+								<td>RORAIMA</td>
+								<td>
+									<a href="uf_edit.html" class="btn btn-info">
+										<span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editar
+									</a>
+									<a href="uf_delete.html" class="btn btn-danger">
+										<span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Excluir
+									</a>
+								</td>
+							</tr>
+
+							<tr>
+								<td>RS</td>
+								<td>RIO GRANDE DO SUL</td>
+								<td>
+									<a href="uf_edit.html" class="btn btn-info">
+										<span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editar
+									</a>
+									<a href="uf_delete.html" class="btn btn-danger">
+										<span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Excluir
+									</a>
+								</td>
+							</tr>
+
+							<tr>
+								<td>SC</td>
+								<td>SANTA CATARINA</td>
+								<td>
+									<a href="uf_edit.html" class="btn btn-info">
+										<span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editar
+									</a>
+									<a href="uf_delete.html" class="btn btn-danger">
+										<span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Excluir
+									</a>
+								</td>
+							</tr>
+
+							<tr>
+								<td>SE</td>
+								<td>SERGIPE</td>
+								<td>
+									<a href="uf_edit.html" class="btn btn-info">
+										<span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editar
+									</a>
+									<a href="uf_delete.html" class="btn btn-danger">
+										<span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Excluir
+									</a>
+								</td>
+							</tr>
+
+							<tr>
+								<td>SP</td>
+								<td>SÃO PAULO</td>
+								<td>
+									<a href="uf_edit.html" class="btn btn-info">
+										<span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editar
+									</a>
+									<a href="uf_delete.html" class="btn btn-danger">
+										<span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Excluir
+									</a>
+								</td>
+							</tr>
+
+							<tr>
+								<td>TO</td>
+								<td>TOCANTINS</td>
+								<td>
+									<a href="uf_edit.html" class="btn btn-info">
+										<span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editar
+									</a>
+									<a href="uf_delete.html" class="btn btn-danger">
+										<span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Excluir
+									</a>
+								</td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+
+				<nav class="text-center">
+					<ul class="pagination">
+						<li>
+							<a href="#" aria-label="Previous">
+								<span aria-hidden="true">&laquo;</span>
+							</a>
+						</li>
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li>
+							<a href="#" aria-label="Next">
+								<span aria-hidden="true">&raquo;</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+
+<!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2023 Copyright:
+    <a class="text-reset fw-bold" href="https://lilosolutions.com.br/">lilosolutions.com.br</a>
+  </div>
+  <!-- Copyright -->
+
+	<script src="resources/js/jquery.min.js"></script>
+	<script src="resources/js/bootstrap.min.js"></script>
+</body>
+
+</html>
