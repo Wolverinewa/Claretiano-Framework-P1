@@ -3,9 +3,60 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>CLARETIANO - Atividade Ciclo 2<</title>
+	<title>CLARETIANO - Atividade Ciclo 3<</title>
+
+	<link rel="shortcut icon" href="#">
 
 	<link rel="stylesheet" href="resources/css/bootstrap.min.css">
+	<script src="resources/js/jquery-1.11.1.js" ></script>
+	<script type="text/javascript" src="resources/js/jquery.validate.js" ></script>
+
+	<script src="resources/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+  	$(document).ready(function() {
+			$("#form_municipio").validate({
+				rules:{
+					nome_municipio:{
+						required: true, 
+						minlength: 2,
+						maxlength: 100
+					},
+					qtde_populacao:{
+						minlength: 1
+					},
+					nome_prefeito:{
+						required: true,
+						minlength: 2,
+						maxlength: 100
+					},
+					uf:{
+						required: true
+					}
+				},
+				messages:{
+					nome_municipio:{
+						required: "O nome do município é obrigatório. Digite o nome do município!!", 
+						minlength: "O nome do município deve conter no mínimo 2 caracteres",
+						maxlength: "O nome do município deve conter no máximo 100 caracteres"
+
+					},
+					qtde_populacao:{
+						minlength: "A qtde da população deve ter no mínimo 1 digito!!"
+					},
+					nome_prefeito:{
+						required: "O nome do prefeito é obrigatório. Digite o nome do prefeito!!",
+						minlength: "O nome do prefeito deve conter no mínimo 2 caracteres",
+						maxlength: "O nome do prefeito deve conter no máximo 100 caracteres"
+					},
+					uf:{
+						required: "O estado é obrigatório: Escolha um estado"
+					}
+				}
+			});
+		});
+	</script>
+
 </head>
 
 <body>
@@ -60,34 +111,34 @@
 
 			<div class="panel-body">
 
-				<form action="#" class="form-horizontal">
+				<form action="#" class="form-horizontal" id="form_municipio">
 					<fieldset>
 						<legend>Dados do município</legend>
 						<div class="form-group">
 							<label for="nome_municipio" class="col-sm-2 control-label">Nome do município</label>
 							<div class="col-sm-4">
-								<input type="text" class="form-control" id="nome_municipio">
+								<input type="text" class="form-control required" name="nome_municipio" id="nome_municipio">
 							</div>
 						</div>
 
 						<div class="form-group">
 							<label for="qtde_populacao" class="col-sm-2 control-label">População</label>
 							<div class="col-sm-4">
-								<input type="text" class="form-control" id="qtde_populacao">
+								<input type="text" class="form-control" name="qtde_populacao" id="qtde_populacao">
 							</div>
 						</div>
 
 						<div class="form-group">
 							<label for="nome_prefeito" class="col-sm-2 control-label">Nome do prefeito</label>
 							<div class="col-sm-4">
-								<input type="text" class="form-control" id="nome_prefeito">
+								<input type="text" class="form-control" name="nome_prefeito" id="nome_prefeito">
 							</div>
 						</div>
 
 						<div class="form-group">
 							<label for="uf" class="col-sm-2 control-label">UF</label>
 							<div class="col-sm-2">
-								<select class="form-control" name="uf" id="uf">
+								<select class="form-control required" name="uf" id="uf">
 									<option value="AC">AC</option>
 									<option value="AL">AL</option>
 									<option value="AM">AM</option>
@@ -119,7 +170,7 @@
 						</div>
 					</fieldset>
 
-					<button type="submit" class="btn btn-primary">
+					<button type="submit" class="btn btn-primary" id="btnGravar">
 						<span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> Gravar
 					</button>
 				</form>
@@ -134,8 +185,8 @@
   </div>
   <!-- Copyright -->
 
-	<script src="resources/js/jquery.min.js"></script>
-	<script src="resources/js/bootstrap.min.js"></script>
+
+	
 </body>
 
 </html>

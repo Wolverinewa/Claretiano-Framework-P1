@@ -3,9 +3,47 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>CLARETIANO - Atividade Ciclo 2<</title>
+	<title>CLARETIANO - Atividade Ciclo 3<</title>
+
+	<link rel="shortcut icon" href="#">
 
 	<link rel="stylesheet" href="resources/css/bootstrap.min.css">
+	<script src="resources/js/jquery-1.11.1.js" ></script>
+	<script type="text/javascript" src="resources/js/jquery.validate.js" ></script>
+
+	<script src="resources/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+  	$(document).ready(function() {
+			$("#form_uf").validate({
+				rules:{
+					sigla_estado:{
+						required: true, 
+						minlength: 2,
+						maxlength: 2
+					},
+					nome_estado:{
+						required: true, 
+						minlength: 2,
+						maxlength: 100
+					}
+				},
+				messages:{
+					sigla_estado:{
+						required: "A sigla do estado é obrigatória!!",
+						minlength: "A sigla tem que ter 2 letras",
+						maxlength: "A sigla tem que ter 2 letras"
+					},
+					nome_estado:{
+						required: "O nome do estado é obrigatório!!",
+						minlength: "O nome tem que ter mais de 2 letras",
+						maxlength: "O nome tem que ter no máximo 100 caracteres"
+					}
+				}
+			});
+		});
+	</script>
+
 </head>
 
 <body>
@@ -60,20 +98,20 @@
 
 			<div class="panel-body">
 
-				<form action="#" class="form-horizontal">
+				<form action="#" class="form-horizontal" id="form_uf">
 					<fieldset>
 						<legend>Dados da Unidade Federativa</legend>
 						<div class="form-group">
 							<label for="sigla_estado" class="col-sm-2 control-label">Sigla da UF</label>
 							<div class="col-sm-2">
-								<input type="text" class="form-control" id="sigla_estado">
+								<input type="text" class="form-control required" id="sigla_estado" name="sigla_estado">
 							</div>
 						</div>
 
 						<div class="form-group">
 							<label for="nome_estado" class="col-sm-2 control-label">Nome da UF</label>
 							<div class="col-sm-4">
-								<input type="text" class="form-control" id="nome_estado">
+								<input type="text" class="form-control required" id="nome_estado" name="nome_estado">
 							</div>
 						</div>
 					</fieldset>
@@ -93,8 +131,6 @@
   </div>
   <!-- Copyright -->
 
-	<script src="resources/js/jquery.min.js"></script>
-	<script src="resources/js/bootstrap.min.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>CLARETIANO - Atividade Ciclo 3<</title>
+
+	<link rel="stylesheet" href="resources/css/bootstrap.min.css">
+<link rel="icon" href="data:,">
+
+<!-- Inclusão do jQuery-->
+<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+<!-- Inclusão do Plugin jQuery Validation-->
+<script src="http://jqueryvalidation.org/files/dist/jquery.validate.js"></script>
+
+	<script src="resources/js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript">
+  	$(function() {
+			$("#form_municipio").validate({
+				rules:{
+					sigla_estado:{
+						required: true, 
+						minlenght: 2,
+					},
+					nome_estado:{
+						required: true, 
+						minlenght: 1,
+						maxlenght: 100
+					}
+				},
+				messages:{
+					sigla_estado:{
+						required: "A sigla do estado é obrigatória!!",
+						minlenght: "A sigla tem que ter 2 letras",
+						maxlenght: "A sigla tem que ter 2 letras"
+					},
+					nome_estado:{
+						required: "O nome do estado é obrigatório!!",
+						minlenght: "O nome tem que ter mais de 2 letras",
+						maxlenght: "O nome tem que ter no máximo 100 caracteres"
+					}
+				}
+			});
+		});
+	</script>
+
+</head>
+
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+					aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">Claretiano</a>
+			</div>
+
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+							Listagens <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu" role="menu">
+							<li>
+								<a href="municipios.html">Municípios</a>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a href="uf.html">Unidades Federativas</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="#">Usuário: Willian</a>
+					</li>
+					<li>
+						<a href="#">Sair</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title text-center">CADASTRO DE UNIDADES FEDERATIVAS - TESTE</h3>
+			</div>
+
+			<div class="panel-body">
+
+				<form action="#" class="form-horizontal" id="form_uf">
+					<fieldset>
+						<legend>Dados da Unidade Federativa</legend>
+						<div class="form-group">
+							<label for="sigla_estado" class="col-sm-2 control-label">Sigla da UF</label>
+							<div class="col-sm-2">
+								<input type="text" class="form-control required" id="sigla_estado" name="sigla_estado">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="nome_estado" class="col-sm-2 control-label">Nome da UF</label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control required" id="nome_estado" name="nome_estado">
+							</div>
+						</div>
+					</fieldset>
+
+					<button type="submit" class="btn btn-primary">
+						<span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> Gravar
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+<!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2023 Copyright:
+    <a class="text-reset fw-bold" href="https://lilosolutions.com.br/">lilosolutions.com.br</a>
+  </div>
+  <!-- Copyright -->
+
+</body>
+
+</html>
